@@ -20,7 +20,7 @@ func main() {
 				w.WriteHeader(http.StatusNotFound)
 				w.Write([]byte("404 - Not Found"))
 			} else {
-				fmt.Fprintf(w, "%q", html.EscapeString(romanNumerals.Numerals[number]))
+				fmt.Fprintf(w, "%q", html.EscapeString(romandNumerals.Numerals[number]))
 			}
 		} else {
 			w.WriteHeader(http.StatusBadRequest)
